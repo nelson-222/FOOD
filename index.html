@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="overlay" id="overlay">
+        <h3>searching now...</h3>
+    </div>
+    <div class="hero-bg">
+        <section class="top">
+          <header>
+            <a href="#">yummy.eats</a>
+          </header>  
+          
+          
+          <h1><span>the healthy</span> eating exprience</h1>
+
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit non animi sapiente odit quod nulla rerum molestiae autem porro aut?</p>
+
+
+          <div class="form-container">
+            <form action="">
+                <div class="form-left">
+                    <label for="city">Enter your city</label>
+                    <input type="name" id="city">
+                    <p>Example: "San Diego"</p>
+                </div>
+
+                <input type="botton" value="Find Food Now" id="cta-btn">
+            </form>
+          </div>
+        </section>
+    </div>
+
+    <section class="authentic">
+        <div class="right-col">
+            <h2>Authentic. Awesome</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus reiciendis tempore odit vel ab eaque veniam quae distinctio alias deserunt? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus, doloribus, cupiditate iste laboriosam amet itaque velit ut architecto obcaecati eaque earum debitis error unde sequi doloremque delectus ratione qui harum. lorem20</p>
+        </div>
+        <img src="/images/food.jpeg" alt="picture of food in a bowl">
+    </section>
+
+
+    <script>
+
+        let btn = document.getElementById('cta-btn');
+        let overlay = document.getElementById('overlay');
+      
+        btn.addEventListener('click', () => {
+            overlay.style.display = 'grid';
+            overlay.classList.add('animate-overlay')
+        })
+
+    </script>
+</body>
+</html>
